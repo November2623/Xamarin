@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ERP.DashBoard"
+             Title="DashBoard" IconImageSource="dashboard-2.png">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" Margin="0,30,0,10" Grid.Row="0">
+                <Label Text="ERP Company @ltd"/>
+                <Image Source="avatar.png" Opacity="0.6" VerticalOptions="Start" Margin="0,3,0,0" WidthRequest="150" HeightRequest="150"/>
+            </StackLayout>
+            <Grid Grid.Row="1" Margin="20,150,20,0" BackgroundColor="AntiqueWhite" VerticalOptions="Start">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+                <FlexLayout Grid.Row="0" Direction="Row"
+                            AlignItems="Center"
+                            JustifyContent="SpaceEvenly" BackgroundColor="Azure">
+                    <Image Source="avatar.png" Aspect="AspectFit" Opacity="0.6" VerticalOptions="Start" Margin="0,3,0,0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ImageTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="avatar.png" Opacity="0.6" VerticalOptions="Start" Margin="0,3,0,0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ImageTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="avatar.png" Opacity="0.6" VerticalOptions="Start" Margin="0,3,0,0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ImageTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </FlexLayout>
+                <FlexLayout Grid.Row="1" Direction="Row"
+                            AlignItems="Center"
+                            JustifyContent="SpaceEvenly" BackgroundColor="Beige">
+                    <Image Source="avatar.png" Opacity="0.6" VerticalOptions="Start" Margin="0,3,0,0"/>
+                    <Image Source="avatar.png" Opacity="0.6" VerticalOptions="Start" Margin="0,3,0,0"/>
+                    <Image Source="avatar.png" Opacity="0.6" VerticalOptions="Start" Margin="0,3,0,0"/>
+                </FlexLayout>
+                
+               
+            </Grid>
+            <StackLayout Grid.Row="2">
+                <Label Text="Version 1.0" HorizontalOptions="Center"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
