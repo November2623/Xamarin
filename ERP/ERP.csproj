@@ -10,9 +10,18 @@
     <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="1.2.0.223" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Pop_up.xaml" />
+    <EmbeddedResource Remove="Content.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Pop_up.xaml.cs" />
+    <Compile Remove="Content.xaml.cs" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-
+using Rg.Plugins.Popup.Services;
 using Xamarin.Forms;
 
 namespace ERP
@@ -17,5 +16,13 @@ namespace ERP
             image.Opacity = .5;
             image.Opacity = 1;
         }
+
+        private void ShowPopUp(object sender, EventArgs e)
+        {
+            PopupNavigation.Instance.PushAsync(new Popup());
+        }
+
+
+        
     }
 }

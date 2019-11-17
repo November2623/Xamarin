@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 x:Class="ERP.Popup"
+                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                 xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                 >
+    <!--<pages:PopupPage.Animation>
+        <animations:ScaleAnimation DurationIn="400"
+                                   DurationOut="300"
+                                   EasingIn="SinOut"
+                                   EasingOut="SinIn"
+                                   HasBackgroundAnimation="True"
+                                   PositionIn="Center"
+                                   PositionOut="Center"
+                                   ScaleIn="1.2"
+                                   ScaleOut="0.8" />
+    </pages:PopupPage.Animation>-->
+
+    <!--  You can use any elements here which are extended from Xamarin.Forms.View  -->
+    <StackLayout Padding="20,20,20,20"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center" BackgroundColor="White" WidthRequest="350">
+        <Label Text="Task" />
+        <StackLayout>
+            <Label Text="Title:"/>
+            <Entry Placeholder="Enter title:"/>
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Description:"/>
+            <Frame BorderColor="LightGray" HasShadow="False">
+                <Editor/>
+            </Frame>
+        </StackLayout>
+        <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly" Grid.Row="3">
+            <Button Text="Cancle" BackgroundColor="AntiqueWhite" WidthRequest="100" ></Button>
+            <Button Text="Save" BackgroundColor="AntiqueWhite" WidthRequest="100" ></Button>
+        </FlexLayout>
+    </StackLayout>
+</pages:PopupPage>
