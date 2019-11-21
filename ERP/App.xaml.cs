@@ -8,6 +8,7 @@ namespace ERP
     public partial class App : Application
     {
         static UserDatabaseController database;
+        static TaskDatabaseController databasetask;
         public static UserDatabaseController Database
         {
             get
@@ -17,6 +18,17 @@ namespace ERP
                     database = new UserDatabaseController();
                 }
                 return database;
+            }
+        }
+        public static TaskDatabaseController databaseTask
+        {
+            get
+            {
+                if (databasetask == null)
+                {
+                    databasetask = new TaskDatabaseController();
+                }
+                return databasetask;
             }
         }
         public App()

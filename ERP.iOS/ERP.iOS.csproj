@@ -149,8 +149,10 @@
       <SubType></SubType>
       <Generator></Generator>
     </BundleResource>
-    <BundleResource Include="Resources\dashboard.png" />
     <BundleResource Include="Resources\dashboard-2.png" />
+    <BundleResource Include="Resources\checking.png" />
+    <BundleResource Include="Resources\info.png" />
+    <BundleResource Include="Resources\qr-code-icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />

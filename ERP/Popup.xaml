@@ -13,14 +13,17 @@
                                    PositionIn="Center"
                                    PositionOut="Center"
                                    ScaleIn="1.2"
-                                   ScaleOut="0.8" />
+                                   ScaleOut
+    ="0.8" />
     </pages:PopupPage.Animation>-->
-
+    <!--<pages:PopupPage.Animation>
+    </pages:PopupPage.Animation>-->
     <!--  You can use any elements here which are extended from Xamarin.Forms.View  -->
     <StackLayout Padding="20,20,20,20"
                  HorizontalOptions="Center"
                  VerticalOptions="Center" BackgroundColor="White" WidthRequest="350">
-        <Label Text="Task" />
+        <Label Text="New Task" />
+        <Entry Placeholder="Assign to:"/>
         <StackLayout>
             <Label Text="Title:"/>
             <Entry Placeholder="Enter title:"/>
@@ -32,8 +35,8 @@
             </Frame>
         </StackLayout>
         <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly" Grid.Row="3">
-            <Button Text="Cancle" BackgroundColor="AntiqueWhite" WidthRequest="100" ></Button>
-            <Button Text="Save" BackgroundColor="AntiqueWhite" WidthRequest="100" ></Button>
+            <Button Text="Cancle" BackgroundColor="AntiqueWhite" WidthRequest="100" Clicked="OnClose"/>
+            <Button Text="Save" BackgroundColor="AntiqueWhite" WidthRequest="100" Clicked="OnSave"></Button>
         </FlexLayout>
     </StackLayout>
 </pages:PopupPage>

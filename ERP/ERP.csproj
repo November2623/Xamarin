@@ -24,4 +24,10 @@
     <Compile Remove="Pop_up.xaml.cs" />
     <Compile Remove="Content.xaml.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Information.xaml.cs">
+      <DependentUpon>..\ERP.iOS\Resources\Information.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>

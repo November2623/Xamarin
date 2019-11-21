@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ERP.Information"
-             Title="Information" IconImageSource="dashboard-2.png">
+             Title="Information" IconImageSource="info.png">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -13,10 +13,10 @@
                 <Image Source="avatar.png" Opacity="0.6" VerticalOptions="Start" Margin="0,3,0,0" WidthRequest="150" HeightRequest="150"/>
             </StackLayout>
             <StackLayout HorizontalOptions="Center" Grid.Row="1" Margin="20,175,20,0" VerticalOptions="Start" WidthRequest="300">
-                <Entry Placeholder="First Name" Margin="0,0,0,10"/>
-                <Entry Placeholder="Last Name" Margin="0,0,0,10"/>
-                <Entry Placeholder="Position" Margin="0,0,0,10"/>
-                <Entry Placeholder="Date of Birth" Margin="0,0,0,10"/>
+                <Entry x:Name="name" Placeholder="First Name" Margin="0,0,0,10"/>
+                <Entry x:Name="last" Placeholder="Last Name" Margin="0,0,0,10"/>
+                <Entry x:Name="pos" Placeholder="Position" Margin="0,0,0,10"/>
+                <Entry x:Name= "date" Placeholder="Date of Birth" Margin="0,0,0,10"/>
             </StackLayout>
             <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly" Grid.Row="2">
                 <Button Text="Edit" BackgroundColor="AntiqueWhite" WidthRequest="100"></Button>
